@@ -9,15 +9,31 @@
   </head>
   <body>
     <div class="form">
-      <h1>Appointment Maker</h1>
+      <h1>Order Form</h1>
       <div id="name">
         <form id="form1">
           <div class="form-group">
             <label for="nameEntry">Enter your full name:</label>
             <input id="nameEntry" class="form-control" type="text">
           </div>
-          <div id="description">
+          <div id="address">
             <div class="form-group">
-              <label for="descriptionEntry">Tell us about your appointment:</label>
-              <input id="descriptionEntry" class="form-control" type="text">
+              <label for="addressEntry">What is your address?</label>
+              <input id="addressEntry" class="form-control" type="text">
+            </div>
           </div>
+          <select class="form-control" id="item">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+          </select>
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+      </div>
+    </div>
+    <div id="response">
+      <p>Thank you, <span class="name"></span>.</p>
+      <p>We will send one <span class="purchase"></span> to <span class="address"></span></p>
+    </div>
+  </body>
